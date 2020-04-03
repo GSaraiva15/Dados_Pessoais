@@ -19,22 +19,22 @@ public class MostraActivity2 extends AppCompatActivity {
         String Telemovel = intent.getStringExtra(MainActivity.EXTRA_TELEMOVEL);
         String Email = intent.getStringExtra(MainActivity.EXTRA_EMAIL);
         String Idade = intent.getStringExtra(MainActivity.EXTRA_IDADE);
-        String Peso = intent.getStringExtra(MainActivity.EXTRA_PESO);
-        String Altura = intent.getStringExtra(MainActivity.EXTRA_ALTURA);
+        float Peso = intent.getFloatExtra(MainActivity.EXTRA_PESO);
+        float Altura = intent.getFloatExtra(MainActivity.EXTRA_ALTURA);
 
         TextView textViewNome = findViewById(R.id.textViewNome);
-        TextView textViewTelemovel = findViewById(R.id.editTextTelemovel);
-        TextView textViewEmail = findViewById(R.id.editTextEmail);
-        TextView textViewIdade = findViewById(R.id.editTextIdade);
-        TextView textViewPeso = findViewById(R.id.editTextPeso);
-        TextView textViewAltura = findViewById(R.id.editTextAltura);
+        TextView textViewTelemovel = findViewById(R.id.textViewTelefone);
+        TextView textViewEmail = findViewById(R.id.textViewEmail);
+        TextView textViewIdade = findViewById(R.id.textViewIdade);
+        TextView textViewPeso = findViewById(R.id.textViewPeso);
+        TextView textViewAltura = findViewById(R.id.textViewAltura);
 
         textViewNome.setText(Nome);
         textViewTelemovel.setText(Telemovel);
         textViewEmail.setText(Email);
-        textViewIdade.setText(Idade);
-        textViewPeso.setText(Peso);
-        textViewAltura.setText(Altura);
+        textViewIdade.setText(String.valueOf(Idade));
+        textViewPeso.setText(String.valueOf(Peso));
+        textViewAltura.setText(String.valueOf(Altura));
 
     }
 }
