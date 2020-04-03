@@ -13,7 +13,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="60dp"
-        android:text="Enviar"
+        android:hint="@string/Botao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText11" />
@@ -28,13 +28,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="@string/editNome"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTelemovel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Nome" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTelemovel"
@@ -45,13 +45,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="@string/editTelefone"
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/editText8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNome"
-        tools:text="Telefone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
         android:id="@+id/editText8"
@@ -62,13 +62,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="@string/editEmail"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/editText9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTelemovel"
-        tools:text="E-mail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTelemovel" />
 
     <EditText
         android:id="@+id/editText9"
@@ -79,13 +79,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="@string/editIdade"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editText10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        tools:text="Idade" />
+        app:layout_constraintTop_toBottomOf="@+id/editText8" />
 
     <EditText
         android:id="@+id/editText10"
@@ -96,13 +96,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="@string/editPeso"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/editText11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9"
-        tools:text="Peso" />
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
 
     <EditText
         android:id="@+id/editText11"
@@ -113,12 +113,12 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="@string/editAltura"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/buttonEnviar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10"
-        tools:text="Altura" />
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
