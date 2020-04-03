@@ -14,9 +14,10 @@
         android:layout_marginRight="32dp"
         android:layout_marginBottom="60dp"
         android:hint="@string/Botao"
+        android:onClick="enviaMensagem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAltura" />
 
     <EditText
         android:id="@+id/editTextNome"
@@ -47,14 +48,14 @@
         android:ems="10"
         android:hint="@string/editTelefone"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/editText8"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -64,14 +65,14 @@
         android:ems="10"
         android:hint="@string/editEmail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editText9"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIdade"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTelemovel" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editTextIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -81,14 +82,14 @@
         android:ems="10"
         android:hint="@string/editIdade"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText10"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPeso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/editTextPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -98,14 +99,14 @@
         android:ems="10"
         android:hint="@string/editPeso"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/editText11"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAltura"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdade" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/editTextAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -119,6 +120,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
