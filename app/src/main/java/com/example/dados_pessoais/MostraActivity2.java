@@ -18,9 +18,10 @@ public class MostraActivity2 extends AppCompatActivity {
         String Nome = intent.getStringExtra(MainActivity.EXTRA_NOME);
         String Telemovel = intent.getStringExtra(MainActivity.EXTRA_TELEMOVEL);
         String Email = intent.getStringExtra(MainActivity.EXTRA_EMAIL);
-        String Idade = intent.getStringExtra(MainActivity.EXTRA_IDADE);
-        float Peso = intent.getFloatExtra(MainActivity.EXTRA_PESO);
-        float Altura = intent.getFloatExtra(MainActivity.EXTRA_ALTURA);
+        Integer Idade = intent.getIntExtra(MainActivity.EXTRA_IDADE,0);
+        Float Peso = intent.getFloatExtra(MainActivity.EXTRA_PESO,0);
+        Float Altura = intent.getFloatExtra(MainActivity.EXTRA_ALTURA,0);
+
 
         TextView textViewNome = findViewById(R.id.textViewNome);
         TextView textViewTelemovel = findViewById(R.id.textViewTelefone);

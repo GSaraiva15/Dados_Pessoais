@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         String Telemovel = editTextTelemovel.getText().toString();
         String Email = editTextEmail.getText().toString();
         Integer Idade = Integer.parseInt(editTextIdade.getText().toString());
-        float Peso = Float.parseFloat(editTextPeso.getText().toString());
-        float Altura = Float.parseFloat(editTextAltura.getText().toString());
+        Float Peso = Float.parseFloat(editTextPeso.getText().toString());
+        Float Altura = Float.parseFloat(editTextAltura.getText().toString());
 
         intent.putExtra(EXTRA_NOME, Nome);
         intent.putExtra(EXTRA_TELEMOVEL, Telemovel);
