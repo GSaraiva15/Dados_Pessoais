@@ -35,20 +35,70 @@ public class MainActivity extends AppCompatActivity {
         String Nome = editTextNome.getText().toString();
         String Telemovel = editTextTelemovel.getText().toString();
         String Email = editTextEmail.getText().toString();
-        Integer Idade = Integer.parseInt(editTextIdade.getText().toString());
-        Float Peso = Float.parseFloat(editTextPeso.getText().toString());
-        Float Altura = Float.parseFloat(editTextAltura.getText().toString());
+        String strIdade = editTextIdade.getText().toString();
+        String strPeso = editTextPeso.getText().toString();
+        String strAltura = editTextAltura.getText().toString();
+
+
+            //----Verificar se os dados estão corretos---
+            if(Nome.length()<=0){
+                editTextNome.setError("Preencha o nome");
+                editTextNome.requestFocus();
+                return;
+            }
+
+            if(Telemovel.length()<=0){
+                editTextTelemovel.setError("Preencha o telefone");
+                editTextTelemovel.requestFocus();
+                return;
+            }
+
+            if(Email.length()<=0){
+                editTextEmail.setError("Preencha o Email");
+                editTextEmail.requestFocus();
+                return;
+            }
+
+            int idade;
+        try{
+            idade = Integer.parseInt(strIdade);
+        }catch(NumberFormatException e){
+            editTextIdade.setError("Insira uma idade válida");
+            editTextIdade.requestFocus();
+            return;
+            }
+        if(idade <18) {
+            editTextIdade.setError("A idade não pode ser inferior a 18 anos");
+            editTextIdade.requestFocus();
+            return;
+        }
+
+        float peso;
+        try {
+            peso = Float.parseFloat(strPeso);
+        }catch(NumberFormatException e){
+            editTextPeso.setError("Insira um Peso válido");
+            editTextPeso.requestFocus();
+            return;
+        }
+        float altura;
+        try {
+            altura = Float.parseFloat(strAltura);
+        }catch(NumberFormatException e){
+            editTextAltura.setError("Insira uma altura válida");
+            editTextAltura.requestFocus();
+            return;
+        }
+
 
         intent.putExtra(EXTRA_NOME, Nome);
         intent.putExtra(EXTRA_TELEMOVEL, Telemovel);
         intent.putExtra(EXTRA_EMAIL, Email);
-        intent.putExtra(EXTRA_IDADE, Idade);
-        intent.putExtra(EXTRA_PESO, Peso);
-        intent.putExtra(EXTRA_ALTURA,Altura);
+        intent.putExtra(EXTRA_IDADE, idade);
+        intent.putExtra(EXTRA_PESO, peso);
+        intent.putExtra(EXTRA_ALTURA, altura);
 
         startActivity(intent);
-
-
 
 
 
