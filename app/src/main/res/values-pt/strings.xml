@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dados_Pessoais</string>
+    <string name="editNome">Nome</string>
+    <string name="editTelefone">Telefone</string>
+    <string name="editEmail">Email</string>
+    <string name="editIdade">Idade</string>
+    <string name="editPeso">Peso</string>
+    <string name="editAltura">Altura</string>
+    <string name="Botao">Enviar</string>
+    <string name="nome_obrigatorio">Preencha o nome</string>
+    <string name="telefone_obrigatorio">Preencha o telefone</string>
+    <string name="email_obrigatorio">Preencha o Email</string>
+    <string name="idade_obrigatorio">Insira uma idade válida</string>
+    <string name="mais_de_18_anos">A idade não pode ser inferior a 18 anos</string>
+</resources>

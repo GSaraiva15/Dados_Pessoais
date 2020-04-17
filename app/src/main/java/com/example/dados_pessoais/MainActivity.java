@@ -42,19 +42,19 @@ public class MainActivity extends AppCompatActivity {
 
             //----Verificar se os dados estão corretos---
             if(Nome.length()<=0){
-                editTextNome.setError("Preencha o nome");
+                editTextNome.setError(getString(R.string.nome_obrigatorio));
                 editTextNome.requestFocus();
                 return;
             }
 
             if(Telemovel.length()<=0){
-                editTextTelemovel.setError("Preencha o telefone");
+                editTextTelemovel.setError(getString(R.string.telefone_obrigatorio));
                 editTextTelemovel.requestFocus();
                 return;
             }
 
             if(Email.length()<=0){
-                editTextEmail.setError("Preencha o Email");
+                editTextEmail.setError(getString(R.string.email_obrigatorio));
                 editTextEmail.requestFocus();
                 return;
             }
@@ -63,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
         try{
             idade = Integer.parseInt(strIdade);
         }catch(NumberFormatException e){
-            editTextIdade.setError("Insira uma idade válida");
+            editTextIdade.setError(getString(R.string.idade_obrigatorio));
             editTextIdade.requestFocus();
             return;
             }
         if(idade <18) {
-            editTextIdade.setError("A idade não pode ser inferior a 18 anos");
+            editTextIdade.setError(getString(R.string.mais_de_18_anos));
             editTextIdade.requestFocus();
             return;
         }
